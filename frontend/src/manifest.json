@@ -1,0 +1,37 @@
+{
+  "name": "travel-uniapp",
+  "appid": "",
+  "description": "旅游微信小程序与 H5 移动端跨端前端工程",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "h5": {
+    "title": "travel-uniapp",
+    "router": {
+      "mode": "hash"
+    },
+    "devServer": {
+      "port": 5173
+    }
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "minified": true,
+      "ignoreDevUnusedFiles": false
+    },
+    "usingComponents": true,
+    "permission": {
+      "scope.userLocation": {
+        "desc": "用于展示附近目的地、地图导航和出行服务"
+      }
+    },
+    "requiredPrivateInfos": ["getLocation", "chooseLocation"]
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3"
+}

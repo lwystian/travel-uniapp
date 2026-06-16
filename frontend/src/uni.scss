@@ -1,0 +1,35 @@
+@import '@/styles/variables.scss';
+@import 'uview-plus/theme.scss';
+
+$uni-color-primary: $color-primary;
+$uni-color-success: $color-success;
+$uni-color-warning: $color-warning;
+$uni-color-error: $color-danger;
+
+$uni-text-color: $color-text;
+$uni-text-color-inverse: #fff;
+$uni-text-color-grey: $color-text-muted;
+$uni-text-color-placeholder: $color-text-muted;
+$uni-text-color-disable: #cbd5e1;
+
+$uni-bg-color: $color-bg-white;
+$uni-bg-color-grey: $color-bg;
+$uni-bg-color-hover: #eef2f6;
+$uni-bg-color-mask: rgba(0, 0, 0, 0.45);
+
+$uni-border-color: $color-border;
+
+$uni-font-size-sm: 24rpx;
+$uni-font-size-base: 28rpx;
+$uni-font-size-lg: 32rpx;
+
+$uni-border-radius-sm: $radius-xs;
+$uni-border-radius-base: $radius-sm;
+$uni-border-radius-lg: $radius-md;
+
+$uni-spacing-row-sm: $space-xs;
+$uni-spacing-row-base: $space-sm;
+$uni-spacing-row-lg: $space-md;
+$uni-spacing-col-sm: $space-xs;
+$uni-spacing-col-base: $space-sm;
+$uni-spacing-col-lg: $space-md;

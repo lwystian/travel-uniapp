@@ -1,0 +1,122 @@
+import type { Article } from '@/types/article'
+
+export const mockArticles: Article[] = [
+  {
+    id: 'article-1',
+    title: '第一次坐三峡游轮，怎么选船和航线',
+    subtitle: '从上下水、房型到岸上游，一篇理清',
+    cover: '/static/images/mock/sanxia.jpg',
+    author: '旅行策划师阿宁',
+    authorAvatar: '/static/images/mock/avatar.png',
+    type: 'guide',
+    tags: ['三峡游轮', '攻略'],
+    destination: '三峡',
+    summary: '整理三峡游轮选船、价格、航线和亲子注意事项。',
+    content: '这里是三峡游轮攻略内容骨架，后续接 CMS 或富文本渲染。',
+    viewCount: 12036,
+    likeCount: 426,
+    favoriteCount: 310,
+    commentCount: 58,
+    publishedAt: '2026-05-01'
+  },
+  {
+    id: 'article-2',
+    title: '呼伦贝尔亲子草原旅行清单',
+    cover: '/static/images/mock/grassland.jpg',
+    author: '草原领队小北',
+    type: 'note',
+    tags: ['亲子游', '草原旅行'],
+    destination: '呼伦贝尔',
+    summary: '夏季草原亲子游装备、玩法和避坑建议。',
+    content: '这里是呼伦贝尔亲子游记内容骨架。',
+    viewCount: 8432,
+    likeCount: 298,
+    favoriteCount: 201,
+    commentCount: 36,
+    publishedAt: '2026-05-08'
+  },
+  {
+    id: 'article-3',
+    title: '徽州古镇摄影机位路线',
+    cover: '/static/images/mock/ancient-town.jpg',
+    author: '摄影师南风',
+    type: 'guide',
+    tags: ['摄影游', '古镇旅行'],
+    destination: '徽州',
+    summary: '晨雾、秋色、徽派建筑的拍摄时间和路线。',
+    content: '这里是徽州摄影攻略内容骨架。',
+    viewCount: 6320,
+    likeCount: 208,
+    favoriteCount: 168,
+    commentCount: 24,
+    publishedAt: '2026-04-20'
+  },
+  {
+    id: 'article-xisha-1',
+    title: '暑期亲子活动 | 黄金系列游轮航次与房型推荐',
+    cover: '/static/images/mock/sanxia.jpg',
+    author: '游轮产品经理',
+    type: 'guide',
+    tags: ['游轮资讯', '亲子'],
+    destination: '三峡',
+    summary: '暑期家庭出行优先看房型、餐饮和岸上观光节奏。',
+    content: '这里是暑期亲子游轮航次与房型推荐内容骨架，后续接 CMS 或游轮资讯接口。',
+    viewCount: 77,
+    likeCount: 18,
+    favoriteCount: 12,
+    commentCount: 3,
+    publishedAt: '2026-05-16'
+  },
+  {
+    id: 'article-xisha-2',
+    title: '限时9折 | 2026年盛夏部分航次预售活动开启',
+    cover: '/static/images/xisha/cruise-light.png',
+    author: '游轮产品经理',
+    type: 'guide',
+    tags: ['预售活动', '特价船票'],
+    destination: '三峡',
+    summary: '部分热门航线开放预售，适合提前锁定家庭房。',
+    content: '这里是盛夏航次预售活动内容骨架，后续接营销活动或 CMS 富文本。',
+    viewCount: 129,
+    likeCount: 24,
+    favoriteCount: 16,
+    commentCount: 5,
+    publishedAt: '2026-04-28'
+  },
+  {
+    id: 'article-xisha-3',
+    title: '楚天游轮「长江神话&长江如歌」7月航次说明',
+    cover: '/static/images/xisha/cruise-blue.png',
+    author: '游轮顾问',
+    type: 'guide',
+    tags: ['船型说明', '航次'],
+    destination: '三峡',
+    summary: '不同船型定位、餐饮服务和岸上项目差异整理。',
+    content: '这里是长江神话与长江如歌航次说明内容骨架，后续接游轮品牌接口。',
+    viewCount: 216,
+    likeCount: 38,
+    favoriteCount: 21,
+    commentCount: 7,
+    publishedAt: '2026-04-09'
+  },
+  {
+    id: 'article-xisha-4',
+    title: '五一小长假畅游三峡如何选船？华夏三号/美维凯璇对比',
+    cover: '/static/images/mock/island.jpg',
+    author: '旅行策划师阿宁',
+    type: 'guide',
+    tags: ['邮轮对比', '选船攻略'],
+    destination: '三峡',
+    summary: '从预算、房型、航线方向和出发日期四个维度判断。',
+    content: '这里是五一小长假游轮选船攻略内容骨架，后续可接邮轮对比详情。',
+    viewCount: 212,
+    likeCount: 35,
+    favoriteCount: 19,
+    commentCount: 6,
+    publishedAt: '2026-04-02'
+  }
+]
+
+export function getMockArticle(id: string) {
+  return mockArticles.find((item) => item.id === id) || mockArticles[0]
+}

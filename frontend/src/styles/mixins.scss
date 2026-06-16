@@ -1,0 +1,28 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin card {
+  background: $color-bg-white;
+  border: 1rpx solid $color-border;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+}
+
+@mixin bottom-safe {
+  padding-bottom: calc(#{$space-md} + env(safe-area-inset-bottom));
+}

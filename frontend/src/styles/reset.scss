@@ -1,0 +1,33 @@
+page {
+  min-height: 100%;
+  color: $color-text;
+  font-size: $font-size-md;
+  line-height: 1.5;
+  background: $color-bg;
+}
+
+view,
+text,
+scroll-view,
+swiper,
+button,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  background: transparent;
+  border: 0;
+}
+
+button::after {
+  border: 0;
+}
+
+image {
+  display: block;
+}

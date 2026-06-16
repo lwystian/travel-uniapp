@@ -1,0 +1,236 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "旅行",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/chongqing/index",
+      "style": {
+        "navigationBarTitleText": "重庆跟团游"
+      }
+    },
+    {
+      "path": "pages/sanxia/index",
+      "style": {
+        "navigationBarTitleText": "三峡游轮"
+      }
+    },
+    {
+      "path": "pages/train/index",
+      "style": {
+        "navigationBarTitleText": "旅游专列"
+      }
+    },
+    {
+      "path": "pages/train/search",
+      "style": {
+        "navigationBarTitleText": "搜索结果"
+      }
+    },
+    {
+      "path": "pages/team/detail",
+      "style": {
+        "navigationBarTitleText": "详情"
+      }
+    },
+    {
+      "path": "pages/xisha/index",
+      "style": {
+        "navigationBarTitleText": "西沙游轮"
+      }
+    },
+    {
+      "path": "pages/cruise/compare",
+      "style": {
+        "navigationBarTitleText": "邮轮对比"
+      }
+    },
+    {
+      "path": "pages/destination/list",
+      "style": {
+        "navigationBarTitleText": "目的地"
+      }
+    },
+    {
+      "path": "pages/tour/list",
+      "style": {
+        "navigationBarTitleText": "线路"
+      }
+    },
+    {
+      "path": "pages/article/list",
+      "style": {
+        "navigationBarTitleText": "攻略"
+      }
+    },
+    {
+      "path": "pages/user/center",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/tour/detail",
+      "style": {
+        "navigationBarTitleText": "线路详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tour/calendar",
+      "style": {
+        "navigationBarTitleText": "价格日历"
+      }
+    },
+    {
+      "path": "pages/destination/detail",
+      "style": {
+        "navigationBarTitleText": "目的地详情"
+      }
+    },
+    {
+      "path": "pages/article/detail",
+      "style": {
+        "navigationBarTitleText": "攻略详情"
+      }
+    },
+    {
+      "path": "pages/search/index",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/search/result",
+      "style": {
+        "navigationBarTitleText": "搜索结果"
+      }
+    },
+    {
+      "path": "pages/order/confirm",
+      "style": {
+        "navigationBarTitleText": "确认订单"
+      }
+    },
+    {
+      "path": "pages/order/list",
+      "style": {
+        "navigationBarTitleText": "我的订单"
+      }
+    },
+    {
+      "path": "pages/order/detail",
+      "style": {
+        "navigationBarTitleText": "订单详情"
+      }
+    },
+    {
+      "path": "pages/user/profile",
+      "style": {
+        "navigationBarTitleText": "用户资料"
+      }
+    },
+    {
+      "path": "pages/user/travelers",
+      "style": {
+        "navigationBarTitleText": "常用出行人"
+      }
+    },
+    {
+      "path": "pages/user/coupons",
+      "style": {
+        "navigationBarTitleText": "优惠券"
+      }
+    },
+    {
+      "path": "pages/auth/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/payment/result",
+      "style": {
+        "navigationBarTitleText": "支付结果"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "subpackages/marketing",
+      "pages": [
+        {
+          "path": "pages/activity",
+          "style": {
+            "navigationBarTitleText": "营销活动"
+          }
+        },
+        {
+          "path": "pages/coupon",
+          "style": {
+            "navigationBarTitleText": "领券中心"
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackages/content",
+      "pages": [
+        {
+          "path": "pages/topic",
+          "style": {
+            "navigationBarTitleText": "专题"
+          }
+        },
+        {
+          "path": "pages/note",
+          "style": {
+            "navigationBarTitleText": "游记"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "travel-uniapp",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f6f8fa"
+  },
+  "tabBar": {
+    "color": "#9aa0a8",
+    "selectedColor": "#111111",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/order/list",
+        "text": "订单",
+        "iconPath": "static/tabbar/order.png",
+        "selectedIconPath": "static/tabbar/order-active.png"
+      },
+      {
+        "pagePath": "pages/user/center",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user-active.png"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  }
+}
